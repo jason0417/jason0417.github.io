@@ -1,10 +1,1 @@
-
-title: jasonpm
-email: jasonqt@aliyun.com
-description: jason 
-baseurl: "https://jason0417.github.com/jasonpm/" 
-url: "http://example.com" # the base hostname & protocol for your site
-github_username: jason0417
-
-# Build settings
-markdown: kramdown
+baseurl: https://jason0417.github.com/jasonpm/
