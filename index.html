@@ -1,18 +1,183 @@
----
-　　layout: default
-　　title: 我的Blog
-　　---
+<html lang="zh"><head>
+  <meta charset="UTF-8">
+  <title>个人简历</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+  <style>
+	/* 定义辅助CSS来美化简历头部 */
+body{font-family:'microsoft yahei',Arial,sans-serif;}
+.cvheader{border-bottom:1px solid #DFDFDF;padding-top:30px;padding-bottom:20px;}
+.cvheader h1{margin:0;}
+.address{background:#efb73e;color:#fff;padding:10px 0;}
+/* 定义辅助CSS来美化简历主体 */
+.cvbody{padding-top:50px;}
+.cbox{margin-bottom:30px;color:#FFF;padding:50px;}
+/* 定义cbox颜色 */
+.purple{background-color:#6f5499;background-image:-webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));background-image:-webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);background-image:-o-linear-gradient(top,#563d7c 0,#6f5499 100%);background-image:linear-gradient(to bottom,#563d7c 0,#6f5499 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c',endColorstr='#6F5499',GradientType=0);background-repeat:repeat-x;}
+.orange{background:#cf4646;background-image:-webkit-gradient(linear,left top,left bottom,from(#cf4646),to(#E74C3C));background-image:-webkit-linear-gradient(top,#cf4646 0,#E74C3C 100%);background-image:-o-linear-gradient(top,#cf4646 0,#E74C3C 100%);background-image:linear-gradient(to bottom,#cf4646 0,#E74C3C 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf4646',endColorstr='#E74C3C',GradientType=0);background-repeat:repeat-x;}
+.blue{background:#3468DB;background-image:-webkit-gradient(linear,left top,left bottom,from(#3468DB),to(#0A64A4));background-image:-webkit-linear-gradient(top,#3468DB 0,#0A64A4 100%);background-image:-o-linear-gradient(top,#3468DB 0,#0A64A4 100%);background-image:linear-gradient(to bottom,#3468DB 0,#0A64A4 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3468DB',endColorstr='#0A64A4',GradientType=0);background-repeat:repeat-x;}
+.bbox{border:1px solid #DFDFDF;border-radius:5px;margin-bottom:30px;padding:50px;}
+.footer{margin:30px 0 30px;padding:50px;background:#CCC;color:#FFF;}
+.info_timeline ul{padding-left:0;}
+.info_timeline ul li{list-style:none;position:relative;padding-bottom:20px;}
+.info_timeline ul li .dot{width:2px;height:100%;position:absolute;left:0px;top:0;background-color:#999;}
+.info_timeline ul li .dot b{border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;width:10px;height:10px;position:absolute;left:-4px;top:24px;background-color:#999;}
+.info_timeline ul li .con{padding-left:30px;}
+.info_timeline ul li .con h3,
+.info_timeline ul.focus li.curr .con h3{font-size:14px;color:#333;line-height:22px;padding-bottom:3px;}
+.info_timeline ul li .con p{line-height:25px;}
+</style>
+</head>
+<body>
+  <!-- 定义简历的头部 //-->
 
-　　<h2>{{ page.title }}</h2>
+<div class="container">
+  <div class="row cvheader">
+    <div class="col-lg-7 col-md-7 col-xs-12">
+      <!--  添加颜色//-->
+      <h1 class="text-primary">周志远</h1>
+      <!--  添加图标 //-->
+      <p><span class="glyphicon glyphicon-paperclip"></span> Web前端工程师 </p>
+    </div>
+    
+    <div class="col-lg-3 col-md-3 col-xs-12">
+      <div class="row">
+        
+        
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <p>邮箱： zyb8523790@163.com</p>
+          <p>电话： 15618100372</p>
+          <p>微信： zhouzhiyuan1988</p>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="col-lg-2 col-md-2 col-xs-12">
+      <p>
+        <!-- 这里定义图片为响应式，并且添加圆角效果，以便保证图片在不同设备上都可以完美显示 //-->
+        <img data-toggle="tooltip" data-placement="left" id="avatar" title="" class="img-responsive img-rounded" src="images/face.jpg" alt="" data-original-title="我的微信二维码">
+       </p>
+    </div>
+  </div>
+</div>
 
-　　<p>最新文章</p>
+<!-- 定义简历的主体部分 //-->
 
-　　<ul>
+<div class="container">
+  <div class="row cvbody">
+    
+    <!-- 这里定义两个区域，布局定义如下：//-->
+    
+    <div class="col-lg-6 col-md-6 col-xs-12">
+    
+      <div class="row">
+        <div class="cbox purple">
+          <h4>个人介绍</h4>
+          <p>
+            88年出生在云南大理的一个小镇上，小学、初中、高中都很一般，大学在江西师范大学读软件工程。毕业后先到了苏州，大约一年前来到上海，个人性格比较内向。喜欢新鲜事物，喜欢HTML5和CSS3，喜欢逛github看老外都在用js做些什么。
+          </p>
+        </div>
+        <div class="cbox orange">
+          <h4>个人技能</h4>
+          	<p>
+            HTML5 & CSS3
+            </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" style="width:80%"></div>
+            </div>
+            
+          	<p>
+            Javascript & Jquery
+            </p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" style="width:80%"></div>
+            </div>
+            
+            Photoshop/UI
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" style="width:50%"></div>
+            </div>
+          <p></p>
+        </div>
+        <div class="cbox blue">
+          <h4>个人爱好</h4>
+          <p><span class="glyphicon glyphicon glyphicon-film"></span> 电影</p>
+          <p><span class="glyphicon glyphicon-music"></span> 音乐</p>
+          <p><span class="glyphicon glyphicon-star"></span> 游戏</p>
+          <p></p>
+        </div>
+      </div>
+    
+    </div>
+    
+    <!-- 为了清楚的分割两个区域，这里我们添加了一个空白区域，或者也可以在CSS中定义Margin实现//-->
+    <div class="col-lg-1 col-md-1 col-xs-12"></div>
+    
+    <div class="col-lg-5 col-md-5 col-xs-12">
+    
+      <div class="row">
+        <div class="bbox">
+          <h4>教育背景</h4>
+          <p>江西师范大学软件工程专业本科毕业。</p>
+        </div>
+        <div class="bbox">
+          <h4>工作经验</h4>
+           <div class="info_area info_right info_timeline">
+          <ul class="focus">
+                            <li class="clearfix">
+                                <!--list样式-->
+                                <div class="dot"><b></b></div>
+                                <!--内容-->
+                                <div class="con">
+                                    <h3>上海天夏网络科技有限公司</h3>
+                                    <p>前端开发</p>
+                                    <p class="desc">2014.5 - 至今</p
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <!--list样式-->
+                                <div class="dot"><b></b></div>
+                                <!--内容-->
+                                <div class="con">
+                                    <h3>苏州白羽软件技术有限公司</h3>
+                                    <p>前端开发</p>
+                                    <p class="desc">2013.5 - 2014.4</p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <!--list样式-->
+                                <div class="dot"><b></b></div>
+                                <!--内容-->
+                                <div class="con">
+                                    <h3>苏州凯普贝尔三维科技有限公司</h3>
+                                    <p>前端开发/应用开发</p>
+                                    <p class="desc">2011.8 - 2013.3</p>
+                                </div>
+                            </li>
+                        </ul>      
+        </div>
+        </div>
+        <div class="bbox">
+          <h4>部分作品</h4>
+          <a href="http://www.baiyusoft.com/" target="_black">白羽软件官网</a><br>
+          <a href="http://www.beimingsoft.com/" target="_black">北冥软件官网</a><br>
+          <a href="http://img.tx.com.cn/img/html/style/txweb/download/" target="_black">天下网客户端下载页面</a><br>
+          <a href="http://img.tx.com.cn/img/html/style/wxhere/index/" target="_black">Here简介页面</a><br>
+        </div>
+        </div>
+      </div>
+    
+    </div>
+    
+    
+  </div>
+</div>
 
-　　　　{% for post in site.posts %}
 
-　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ https://jason0417.github.io/jasonpm/}}{{ post.url }}">{{ post.title }}</a></li>
+<!-- 引入jQuery类库和Bootstrap3的Javascript类库 //-->
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-　　　　{% endfor %}
 
-　　</ul>
+</body></html>
