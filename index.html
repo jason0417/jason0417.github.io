@@ -1,171 +1,107 @@
-<html lang="zh"><head>
-  <meta charset="UTF-8">
-  <title>个人简历</title>
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
-  <style>
+---
+layout: landing
+---
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>{{ site.title }}</h2>
+							<p>{{ site.description | markdownify }}</p>
+							<ul class="actions">
+								<li><a href="#" class="button special">Activate</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
 
-	/* 定义辅助CSS来美化简历头部 */
-body{font-family:'microsoft yahei',Arial,sans-serif;}
-.cvheader{border-bottom:1px solid #DFDFDF;padding-top:30px;padding-bottom:20px;}
-.cvheader h1{margin:0;}
-.address{background:#efb73e;color:#fff;padding:10px 0;}
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Arcu aliquet vel lobortis ata nisl<br />
+								eget augue amet aliquet nisl cep donec</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
 
-/* 定义辅助CSS来美化简历主体 */
-.cvbody{padding-top:50px;}
-.cbox{margin-bottom:30px;color:#FFF;padding:50px;}
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>Magna primis lobortis<br />
+								sed ullamcorper</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Tortor dolore feugiat<br />
+								elementum magna</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Augue eleifend aliquet<br />
+								sed condimentum</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							</div>
+						</section>
+					</section>
 
-/* 定义cbox颜色 */
-.purple{background-color:#6f5499;background-image:-webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));background-image:-webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);background-image:-o-linear-gradient(top,#563d7c 0,#6f5499 100%);background-image:linear-gradient(to bottom,#563d7c 0,#6f5499 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c',endColorstr='#6F5499',GradientType=0);background-repeat:repeat-x;}
-.orange{background:#cf4646;background-image:-webkit-gradient(linear,left top,left bottom,from(#cf4646),to(#E74C3C));background-image:-webkit-linear-gradient(top,#cf4646 0,#E74C3C 100%);background-image:-o-linear-gradient(top,#cf4646 0,#E74C3C 100%);background-image:linear-gradient(to bottom,#cf4646 0,#E74C3C 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf4646',endColorstr='#E74C3C',GradientType=0);background-repeat:repeat-x;}
-.blue{background:#3468DB;background-image:-webkit-gradient(linear,left top,left bottom,from(#3468DB),to(#0A64A4));background-image:-webkit-linear-gradient(top,#3468DB 0,#0A64A4 100%);background-image:-o-linear-gradient(top,#3468DB 0,#0A64A4 100%);background-image:linear-gradient(to bottom,#3468DB 0,#0A64A4 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3468DB',endColorstr='#0A64A4',GradientType=0);background-repeat:repeat-x;}
-.bbox{border:1px solid #DFDFDF;border-radius:5px;margin-bottom:30px;padding:50px;}
-.footer{margin:30px 0 30px;padding:50px;background:#CCC;color:#FFF;}
-.info_timeline ul{padding-left:0;}
-.info_timeline ul li{list-style:none;position:relative;padding-bottom:20px;}
-.info_timeline ul li .dot{width:2px;height:100%;position:absolute;left:0px;top:0;background-color:#999;}
-.info_timeline ul li .dot b{border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;width:10px;height:10px;position:absolute;left:-4px;top:24px;background-color:#999;}
-.info_timeline ul li .con{padding-left:30px;}
-.info_timeline ul li .con h3,
-.info_timeline ul.focus li.curr .con h3{font-size:14px;color:#333;line-height:22px;padding-bottom:3px;}
-.info_timeline ul li .con p{line-height:25px;}
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Accumsan mus tortor nunc aliquet</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o">
+									<h3>Arcu accumsan</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3>Ac Augue Eget</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-code">
+									<h3>Mus Scelerisque</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-headphones">
+									<h3>Mauris Imperdiet</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-heart-o">
+									<h3>Aenean Primis</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+								<li class="icon fa-flag-o">
+									<h3>Tortor Ut</h3>
+									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
 
-</style>
-</head>
-<body>
-  <!-- 定义简历的头部 //-->
-
-<div class="container">
-  <div class="row cvheader">
-    <div class="col-lg-7 col-md-7 col-xs-12">
-      <!--  添加颜色//-->
-      <h1 class="text-primary">刘嘉磊</h1>
-      <!--  添加图标 //-->
-      <p><span class="glyphicon glyphicon-paperclip"></span> 产品经理 </p>
-    </div>
-    
-    <div class="col-lg-3 col-md-3 col-xs-12">
-      <div class="row">
-        
-        
-        <div class="col-lg-12 col-md-12 col-xs-12">
-          <p>邮箱： 953229214@qq.com</p>
-          <p>电话： 18516506417</p>
-          <p>微信： jason_liu0417</p>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="col-lg-2 col-md-2 col-xs-12">
-      <p>
-        <!-- 这里定义图片为响应式，并且添加圆角效果，以便保证图片在不同设备上都可以完美显示 //-->
-        <img data-toggle="tooltip" data-placement="left" id="avatar" title="" class="img-responsive img-rounded" src="images/face.jpg" alt="" data-original-title="我的微信二维码">
-       </p>
-    </div>
-  </div>
-</div>
-
-<!-- 定义简历的主体部分 //-->
-
-<div class="container">
-  <div class="row cvbody">
-    
-    <!-- 这里定义两个区域，布局定义如下：//-->
-    
-    <div class="col-lg-6 col-md-6 col-xs-12">
-    
-      <div class="row">
-        <div class="cbox purple">
-          <h4>个人介绍</h4>
-          <p>
-              首席产品喵
-          </p>
-        </div>
-        <div class="cbox orange">
-          <h4>个人技能</h4>
-          	<p>
-            吹牛逼
-            </p>
-            <div class="progress">
-              <div class="progress-bar progress-bar-success" style="width:80%"></div>
-            </div>
-            
-          	<p>
-            画原型
-            </p>
-            <div class="progress">
-              <div class="progress-bar progress-bar-info" style="width:80%"></div>
-            </div>
-            
-            写文档&画饼
-            <div class="progress">
-              <div class="progress-bar progress-bar-warning" style="width:50%"></div>
-            </div>
-          <p></p>
-        </div>
-       
-      </div>
-    
-    </div>
-    
-    <!-- 为了清楚的分割两个区域，这里我们添加了一个空白区域，或者也可以在CSS中定义Margin实现//-->
-    <div class="col-lg-1 col-md-1 col-xs-12"></div>
-    
-    <div class="col-lg-5 col-md-5 col-xs-12">
-    
-      <div class="row">
-        <div class="bbox">
-          <h4>教育背景</h4>
-          <p>南昌航空大学 软件工程 本科</p>
-        </div>
-        <div class="bbox">
-          <h4>工作经验</h4>
-           <div class="info_area info_right info_timeline">
-          <ul class="focus">
-                            <li class="clearfix">
-                                <!--list样式-->
-                                <div class="dot"><b></b></div>
-                                <!--内容-->
-                                <div class="con">
-                                    <h3>1药网</h3>
-                                    <p>移动产品经理</p>
-                                    <p class="desc">2014.8 - 2015.8</p
-                                </div>
-                            </li>
-                            <li class="clearfix">
-                                <!--list样式-->
-                                <div class="dot"><b></b></div>
-                                <!--内容-->
-                                <div class="con">
-                                    <h3>360健康</h3>
-                                    <p>高级产品经理</p>
-                                    <p class="desc">2015.8 - 至今</p>
-                                </div>
-                            </li>
-                            
-                        </ul>      
-        </div>
-        </div>
-        <div class="bbox">
-          <h4>部分作品</h4>
-          <a href="http://www.111.com.cn/" target="_black">1药网</a><br>
-          <a href="http://www.360haoyao.com/" target="_black">360健康</a><br>
-        
-        </div>
-        </div>
-      </div>
-    
-    </div>
-    
-    
-  </div>
-</div>
-
-
-<!-- 引入jQuery类库和Bootstrap3的Javascript类库 //-->
-<script type="text/javascript" src="http://libs.baidu.com/jquery/1.11.1/jquery.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-</body></html>
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Arcue ut vel commodo</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="#" class="button fit special">Activate</a></li>
+								<li><a href="#" class="button fit">Learn More</a></li>
+							</ul>
+						</div>
+					</section>
