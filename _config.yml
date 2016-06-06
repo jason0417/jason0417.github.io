@@ -1,59 +1,57 @@
-# Welcome to Jekyll!
-#
 
-# Site settings
-title: Spectral
-description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
-email: your-email@domain.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
-  linkedin-square: https://linkedin.com/in/<username>
-  facebook-official: https://facebook.com/<username>
-  google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
-  #flickr:
-  #instagram:
-  #youtube-square:
-  #spotify:
-  #stack-overflow:
-  #vimeo:
-  #reddit:
-  #stubleupon:
-  #delicious:
-  #pied-piper:
-  #digg:
-  #soundcloud:
-  #deviantart:
-  #angellist:
-  #tumblr-square:
-  #stackexchange:
-  #weibo:
-  #trello:
-  #foursquare:
-  #linux:
-  #bitbucket-square:
-  #vk:
-  #slack:
-  #vine:
-  #weixin:
-  #yelp:
-  #skyatlas:
-  #leanpub:
-  #connectdevelop:
-  #ils:
-  #forumbee:
-  #tripadvisor:
-  #amazon:
+##########################################
+#     Change these variables !important
+##########################################
 
-# Build settings
-markdown: kramdown
-#sass:
-#  style: compressed
+owner: Name Surname
+
+title: Aliquam
+
+# Set subtitle e.g "blog"
+subtitle: Theme
+
+# Following needed for disqus integration
+
+# Set your 'disqus' account name
+disqus:
+
+# Uncomment if deployed locally
+# url: https://localhost:4000
+
+# Set your host if deployed not locally
+# For example "https://yourGitHub.github.io"
+url:
+
+# Change this to your base URL starting with forward slash if site is in gh-pages branch
+# For example /branchName
+baseurl:
+
+# Change this to your google analytics ID
+google_analytics:
+
+##########################################
+#          Optional variables
+##########################################
+
+
+# Set maximum posts per page
+paginate: 5
+
+# Set permalink
+permalink: /:categories/:title
+
+# Set excerpt separator
+truncate_size: 30
+
+##########################################
+#          Do not change these variables
+##########################################
+
+include:  ["_pages"]
+sass:
+  sass_dir: _sass
+
+
+gems: [jekyll-paginate]
+paginate_path: /_pages/page:num
+
