@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-<body>
-<div id="wrapper">
-    <header>
-        {% include nav.html %}
-    </header>
-    <main id="start">
-        {{ content }}
-    </main>
-    <footer>
-        {% include paginator.html %}
-        {% include footer.html %}
-    </footer>
-</div>
-<script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
-</body>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sidebar.html %}
+
+    <script src="{{ site.baseurl }}/js/index.js"></script>
+
+  </body>
+
+  <footer></footer>
+
 </html>
