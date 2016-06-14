@@ -1,20 +1,22 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: 坑里也有蓝天-jason爬坑之路
+email: jasonqt@aliyun.com
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 
+
 # Sidebar settings
-description: One sentence introducing yourself or what you do
+description: 着手与眼前，把想法化成现实。梳理，总结，掌握。
 
 # Social icons
-facebook: username
-linkedin: username
-github: username
-deviantart: username
-codepen: username
+#facebook: username
+#linkedin: username
+github: jason0417
+sina: 3041632822
+#deviantart: username
+#codepen: username
 
-footer: © Taken theme
+footer: © 未知设计
 
 # Build settings
 markdown: kramdown
